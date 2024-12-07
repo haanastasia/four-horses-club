@@ -4,7 +4,7 @@ let personalCarouselInstance = null;
 let stagesCarouselInstance = null;
 
 function initializeCarousels() {
-    // Уничтожаем предыдущие экземпляры
+
     if (personalCarouselInstance) {
         personalCarouselInstance.destroy();
         personalCarouselInstance = null;
@@ -15,13 +15,13 @@ function initializeCarousels() {
         stagesCarouselInstance = null;
     }
 
-    // Проверяем текущую ширину экрана
+    // РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ СЂР°СЃС€РёСЂРµРЅРёСЏ СЌРєСЂР°РЅР°
     if (document.documentElement.clientWidth <= 992) {
         personalCarouselInstance = new Carousel('.personal-carousel', {
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoPlay: false,
+            autoPlay: true,
             autoPlayInterval: 4000,
         });
 
@@ -36,20 +36,19 @@ function initializeCarousels() {
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
-            autoPlay: false,
+            autoPlay: true,
             autoPlayInterval: 4000,
             classControl: '.personal-carousel__control',
         });
     }
 }
 
-// Первичная инициализация
 initializeCarousels();
 
-// Пересоздание карусели при изменении размера экрана
+// СЂРµСЃР°Р№Р· РґР»СЏ РєР°СЂСѓСЃРµР»РµР№
 window.addEventListener('resize', initializeCarousels);
 
-// Выбираем все ссылки с якорями
+// РЅР°С…РѕРґРёРј РІСЃРµ СЏРєРѕСЂСЏ
 const anchors = document.querySelectorAll('a[href^="#"]');
 
 anchors.forEach(anchor => {
@@ -60,13 +59,12 @@ anchors.forEach(anchor => {
 
         const targetElement = document.getElementById(targetId);
 
-        // Получаем позицию элемента относительно верхней части страницы
         const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-        // Плавно прокручиваем к элементу с учетом отступа в 70 пикселей
+        // СЃРєСЂРѕР»Р» СЃ СѓС‡РµС‚РѕРј + 70 РїРёРєСЃ
         window.scrollTo({
             top: elementPosition - 70, 
-            behavior: 'smooth'  // Плавная прокрутка
+            behavior: 'smooth'  
         });
     });
 });

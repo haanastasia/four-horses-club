@@ -10,7 +10,7 @@ export default class Carousel {
 		this.slides = Array.from(this.container.children);
 		this.totalSlides = this.slides.length;
 
-		// Настройки по умолчанию
+		// РќР°СЃС‚СЂРѕР№РєРё РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 		this.options = {
 			infinite: options.infinite || false,
 			slidesToShow: options.slidesToShow || 1,
@@ -25,7 +25,6 @@ export default class Carousel {
 		this.currentIndex = 0;
 		this.autoPlayTimer = null;
 
-		// Инициализация
 		this.init();
 	}
 
@@ -104,28 +103,28 @@ export default class Carousel {
 	}
 
 	update() {
-		// Рассчитываем смещение: учитываем количество слайдов, которые прокручиваются за раз
+		// Р Р°СЃСЃС‡РёС‚С‹РІР°РµРј СЃРјРµС‰РµРЅРёРµ: СѓС‡РёС‚С‹РІР°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР»Р°Р№РґРѕРІ, РєРѕС‚РѕСЂС‹Рµ РїСЂРѕРєСЂСѓС‡РёРІР°СЋС‚СЃСЏ Р·Р° СЂР°Р·
 		const offset = -(this.currentIndex * (100 * this.options.slidesToScroll / this.options.slidesToShow));
 
-		// Применяем смещение ко всем слайдам
+		// РџСЂРёРјРµРЅСЏРµРј СЃРјРµС‰РµРЅРёРµ РєРѕ РІСЃРµРј СЃР»Р°Р№РґР°Рј
 		for (const slide of this.slides) {
 			slide.style.transform = `translateX(${offset}%)`;
 		}
 
-		// Обновляем пагинацию или точки
+		// РћР±РЅРѕРІР»СЏРµРј РїР°РіРёРЅР°С†РёСЋ РёР»Рё С‚РѕС‡РєРё
 		if (this.options.dots) {
 			this.updateDots();
 		} else {
 			this.updatePagination();
 		}
 
-		// Обновляем состояние кнопок
+		// РћР±РЅРѕРІР»СЏРµРј СЃРѕСЃС‚РѕСЏРЅРёРµ РєРЅРѕРїРѕРє
 		if (!this.options.infinite) {
 			this.prevButton.disabled = this.currentIndex === 0;
 			const maxIndex = this.totalSlides - this.options.slidesToShow;
 			this.nextButton.disabled = this.currentIndex >= maxIndex;
 		} else {
-			this.prevButton.disabled = false; // В бесконечном режиме кнопки всегда активны
+			this.prevButton.disabled = false; // Р’ Р±РµСЃРєРѕРЅРµС‡РЅРѕРј СЂРµР¶РёРјРµ РєРЅРѕРїРєРё РІСЃРµРіРґР° Р°РєС‚РёРІРЅС‹
 			this.nextButton.disabled = false;
 		}
 	}
@@ -172,23 +171,23 @@ export default class Carousel {
 
 		this.container.classList.remove('card-carousel');
 
-		// Удаление созданных элементов управления
+		// РЈРґР°Р»РµРЅРёРµ СЃРѕР·РґР°РЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ СѓРїСЂР°РІР»РµРЅРёСЏ
 		if (this.prevButton) this.prevButton.remove();
 		if (this.nextButton) this.nextButton.remove();
 		if (this.pagination) this.pagination.remove();
 		if (this.dotsContainer) this.dotsContainer.remove();
 
-		// Сброс стилей слайдов
+		// РЎР±СЂРѕСЃ СЃС‚РёР»РµР№ СЃР»Р°Р№РґРѕРІ
 		for (const slide of this.slides) {
 			slide.style.flex = '';
 			slide.style.transition = '';
 			slide.style.transform = '';
 		}
 
-		// Остановка автоигры
+		// РћСЃС‚Р°РЅРѕРІРєР° Р°РІС‚РѕРїСЂРѕРёРіСЂС‹РІР°РЅРёСЏ
 		this.stopAutoPlay();
 
-		// Очистка контейнера управления
+		// РћС‡РёСЃС‚РєР° РєРѕРЅС‚РµР№РЅРµСЂР° СѓРїСЂР°РІР»РµРЅРёСЏ СЃ СѓС‡РµС‚РѕРј РєР°СЃС‚РѕРјР° РїР°РіРёРЅР°С†РёРё
 		if (this.options.classControl && this.options.classControl !== document.body) {
 
 			if (this.options.customControl) {
