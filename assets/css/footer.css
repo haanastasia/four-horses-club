@@ -1,0 +1,14 @@
+.footer {
+    background: #E9DED4;
+    padding: 40px 0px 72px;
+}
+
+.footer__copyright {
+    font-family: 'Golos Text';
+    color: rgb(49 49 49 / 60%);
+}
+
+.footer__copyright-text {
+    font-size: 16px;
+    opacity: 0.6;
+}

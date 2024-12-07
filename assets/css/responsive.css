@@ -1,0 +1,361 @@
+@media (max-width: 1262px) {
+    .info-block__picture-right {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .head-section-bg__chess-small {
+        left: 1162px;
+    }
+
+    .head-section-bg__chess-middle {
+        right: 10%;
+    }
+
+    .stages__grid:not(.card-carousel) .stages__card:last-child .stages__item {
+        padding-right: 314.64px;
+    }
+
+    .info-section-block__content {
+        width: calc(100% -(400px + 44px));
+    }
+
+    .info-section-block__image-wrapper {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .info-section__title-container-inline {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .running-line__item {
+        font-size: 16px;
+    }
+
+    .running-line {
+        padding: 10px 12px;
+    }
+
+    .main-wrapper {
+        padding-top: 50px;
+    }
+
+    .header__logo-text {
+        font-size: 14.42px;
+        line-height: 15.57px;
+    }
+
+    .header__logo-img {
+        width: 79.5px;
+        margin-right: 5.5px;
+    }
+
+    .footer {
+        padding: 40px 0px 60px;
+    }
+
+    .head-section__bottom-content-button {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .head-section__button:last-child {
+        margin-bottom: 0px;
+    }
+
+    .head-section__button {
+        margin: 0px auto 14px;
+        width: 100%;
+        max-width: 335px;
+        display: block;
+        padding: 11px 10px 12px;
+    }
+
+    .head-section__title-center {
+        padding-left: 6px;
+    }
+
+    .head-section-bg__sun {
+        width: 400px;
+        height: 400px;
+        left: initial;
+        right: -50px;
+        bottom: 200px;
+    }
+
+    .head-section__container {
+        padding-top: 90px;
+        padding-bottom: 291px;
+    }
+
+    .info-section__title {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .info-block__picture {
+        margin: 23px auto 25px;
+        display: block;
+        order: 2;
+    }
+
+    .info-section__title-order--1 {
+        order: 1;
+    }
+
+    .info-section__title-order--3 {
+        order: 3;
+    }
+
+    .info-section-block__image-wrapper {
+        width: 100%;
+        padding-right: 0pc;
+    }
+
+    .info-section-block__content {
+        width: 100%;
+    }
+
+    .info-block-list__row {
+        flex-wrap: wrap;
+    }
+
+    .info-block-list__col-heading,
+    .info-block-list__col {
+        width: initial;
+        min-width: initial;
+    }
+
+    .info-block-list__col:first-child {
+        border-right: 0;
+    }
+
+    .info-block-list__row:not(:last-child) .info-block-list__col:first-child {
+        border-bottom: 0px;
+    }
+
+    .info-section-block__title {
+        margin-bottom: 44px;
+    }
+
+    .info-block-list__col {
+        padding: 0px;
+    }
+
+    .info-block-list__row:not(:last-child) .info-block-list__col {
+        border-bottom: 0px;
+        padding-bottom: 13px;
+    }
+
+    .info-block-list__row:not(:last-child) {
+        padding-bottom: 0;
+        border-bottom: 2px solid #D0D0D0;
+        margin-bottom: 16px;
+    }
+
+    .info-block__list {
+        margin-bottom: 40px;
+    }
+
+    .info-block-list__col-heading,
+    .info-block-list__row:last-child .info-block-list__col-heading {
+        padding-bottom: 14px;
+    }
+
+    .section {
+        margin-bottom: 121px;
+    }
+
+    .stages__grid-wrapper:before {
+        width: 318.76px;
+        height: 118.84px;
+        transform: rotate(-18.73deg);
+        z-index: 1;
+        top: 35.03px;
+        bottom: initial;
+        left: initial;
+        right: -2.4px;
+        background-size: 318.76px;
+    }
+
+    .stages__grid-wrapper {
+        padding-top: 128px;
+    }
+
+    .personal-carousel__control {
+        display: none;
+    }
+
+    .card-carousel__control {
+        margin: 28px auto 0px;
+    }
+
+    .personal-carousel {
+        margin-bottom: 40px;
+    }
+
+    .personal {
+        margin-bottom: 100px;
+    }
+
+    .personal__header {
+        margin-bottom: 40px;
+    }
+
+    .card-carousel__control {
+        gap: 9px;
+    }
+
+    .personal-card__image {
+        max-width: 244px;
+        width: 100%;
+        margin: 0px auto 29px;
+    }
+
+    .personal-card__content-title {
+        margin-bottom: 7px;
+    }
+
+    .card-carousel__direction {
+        width: 36px;
+        height: 36px;
+    }
+
+    a,
+    p {
+        font-size: 18px;
+    }
+
+    .header {
+        padding: 18px 0px;
+    }
+
+    .head-section__paragraph {
+        text-align: left;
+    }
+
+    .support-section {
+        margin-bottom: 32px;
+    }
+
+    .info-section__block {
+        gap: 11px;
+    }
+
+    .info-block-list__col-heading {
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    h2,
+    .title {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    h3,
+    .info-block__title {
+        font-size: 28px;
+    }
+
+    .head-section__title {
+        font-size: 36px;
+        line-height: 1.12;
+    }
+
+    .head-section__content {
+        max-width: 335px;
+    }
+
+    .stages-header__title {
+        display: block;
+        margin-bottom: 12px;
+        word-wrap: break-word;
+    }
+
+    .stages-header__link {
+        top: initial;
+        left: initial;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .stages__header {
+        margin-bottom: 20px;
+    }
+
+    .head-section__button-light {
+        background-color: rgb(255 255 255 / 90%);
+        border-color: rgb(255 255 255 / 90%);
+    }
+
+    .head-section-bg__chess-middle {
+        width: 76.71px;
+        height: 121.63px;
+        background-size: 100%;
+        bottom: -14px;
+        right: -15px;
+        left: 0px;
+        margin: auto;
+    }
+
+    .stages-item__text {
+        font-size: 18px;
+    }
+
+    .head-section-bg__sun {
+        width: 297.47px;
+        height: 297.47px;
+        bottom: 66.69px;
+        right: 0px;
+        left: initial;
+    }
+
+    .info-section-block__image {
+        max-width: 420px;
+        width: calc(100% + 40px);
+        margin: -13px -20px -5px;
+    }
+
+    .head-section:before {
+        background-size: auto 100%;
+        height: 276.01px;
+        background-position: right bottom;
+    }
+}
+
+@media (max-width: 576px) {
+    .head-section:before {
+        height: 276.01px;
+        background-image: url('/assets/img/bg-head-min.png');
+        background-position: center bottom -11px;
+        background-size: initial;
+    }
+
+    .container {
+        max-width: 375px;
+    }
+
+    .head-section-bg__sun {
+        left: 10.04px;
+        right: initial;
+    }
+}

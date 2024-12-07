@@ -1,0 +1,45 @@
+.personal {
+    margin-bottom: 140px;
+}
+
+.personal__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.personal-card__content {
+    text-align: center;
+}
+
+.personal-card__image {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 28px;
+    border-radius: 100%;
+}
+
+.personal-card__content-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.personal__card {
+    max-width: 320px;
+    margin: auto;
+}
+
+.personal-card__content-text {
+    font-size: 20px;
+    color: rgb(49 49 49 / 60%);
+    margin-bottom: 20px;
+}
+
+.personal-carousel__control {
+    position: relative;
+    top: -2px;
+}

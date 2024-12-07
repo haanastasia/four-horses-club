@@ -1,0 +1,97 @@
+.card-carousel {
+    width: calc(100% + 20px);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0px -10px;
+}
+
+.card-carousel>* {
+    padding: 0px 10px;
+}
+
+.card-carousel__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.card-carousel__counter {
+    color: rgb(49 49 49 / 60%);
+    order: 2;
+    width: 39px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card-carousel__counter span {
+    color: var(--color-text);
+}
+
+.card-carousel__dots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    order: 2;
+    gap: 6px;
+    margin: 0px 7px;
+}
+
+.card-carousel__dot {
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+}
+
+.card-carousel__dot--active {
+    background-color: var(--color-text);
+}
+
+.card-carousel__direction {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 0px;
+    padding: 0px;
+    outline: none;
+    background-color: var(--color-text);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.card-carousel__direction[disabled] {
+    background-color: #D6D6D6;
+}
+
+.card-carousel__direction--next {
+    background-image: url('data:image/svg+xml,<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.4618 1.53839L9.92334 9.99993L1.4618 18.4615" stroke="white" stroke-width="2" stroke-linecap="square"/></svg>');
+    order: 3;
+    background-position: center left 56%;
+}
+
+.card-carousel__direction--prev {
+    background-image: url('data:image/svg+xml,<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5382 18.4615L2.07666 9.99995L10.5382 1.53841" stroke="white" stroke-width="2" stroke-linecap="square"/></svg>');
+    order: 1;
+    background-position: center right 56%;
+}
+
+.card-carousel__direction:not([disabled]):hover {
+    background-color: var(--color-active);
+}
+
+.card-carousel__control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}

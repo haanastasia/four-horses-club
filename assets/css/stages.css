@@ -1,0 +1,130 @@
+.stages {
+    overflow: hidden;
+}
+
+.stages__header {
+    position: relative;
+    max-width: 806px;
+    margin-bottom: 54px;
+}
+
+.stages-header__link {
+    position: relative;
+    top: -2px;
+    left: 7px;
+    display: inline-block;
+    max-width: 280px;
+}
+
+.stages-header__title {
+    display: inline;
+}
+
+.stages__grid:not(.card-carousel) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stages__grid {
+    counter-reset: stage 0;
+}
+
+.stages__grid-wrapper {
+    position: relative;
+}
+
+.stages__grid-wrapper:before {
+    content: "";
+    position: absolute;
+    bottom: 46.34px;
+    right: -49.5px;
+    background-image: url(/assets/img/plane.png);
+    background-repeat: no-repeat;
+    width: 376.64px;
+    height: 140.42px;
+    transform: rotate(-15.31deg);
+}
+
+.stages__card:nth-child(1) {
+    grid-column: span 2 / span 2;
+}
+
+.stages__card:nth-child(2) {
+    grid-row: span 2 / span 2;
+}
+
+.stages__card:nth-child(3) {
+    grid-column: span 2 / span 2;
+}
+
+.stages__card:nth-child(4) {
+    grid-row-start: 3;
+}
+
+.stages__card:nth-child(5) {
+    grid-column: span 2 / span 2;
+}
+
+.stages__item {
+    padding: 20px 21px 20px 20px;
+    background-color: #E9DED4;
+    background-image: url('/assets/img/paper.jpg');
+    counter-increment: stage 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.stages-item__text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text);
+    max-width: 446px;
+}
+
+.stages__item:before {
+    content: counter(stage);
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text);
+    position: relative;
+    top: -1px;
+}
+
+.stages__item-wrapper--two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.stages__item-wrapper {
+    height: 100%;
+}
+
+.stages__grid.card-carousel .stages__item {
+    background: transparent;
+    padding: 0px;
+    height: initial;
+}
+
+.stages__grid.card-carousel .stages__item-wrapper {
+    background-color: #E9DED4;
+    background-image: url('/assets/img/paper.jpg');
+    padding: 64px 20px 34px;
+    display: block;
+}
+
+.stages__grid.card-carousel .stages__item+.stages__item {
+    margin-top: 29px;
+}
