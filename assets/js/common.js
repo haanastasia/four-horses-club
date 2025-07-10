@@ -1,5 +1,3 @@
-import Carousel from './Carousel.js';
-
 let personalCarouselInstance = null;
 let stagesCarouselInstance = null;
 

@@ -56,7 +56,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    background: url('/assets/img/paper-bg.jpg');
+    background: url('../../assets/img/paper-bg.jpg');
     mix-blend-mode: color-burn;
     background-position: center bottom;
     z-index: 1;
@@ -68,7 +68,7 @@
     bottom: 0px;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/img/bg-head.png');
+    background-image: url('../../assets/img/bg-head.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: 1;
@@ -98,7 +98,7 @@
 }
 
 .head-section-bg__chess-middle {
-    background-image: url('/assets/img/chess1.png');
+    background-image: url('../../assets/img/chess1.png');
     width: 153.87px;
     height: 243.99px;
     bottom: -38.64px;
@@ -107,7 +107,7 @@
 }
 
 .head-section-bg__chess-small {
-    background-image: url('/assets/img/chess2.png');
+    background-image: url('../../assets/img/chess2.png');
     width: 82.61px;
     height: 122.22px;
     bottom: 19.58px;
@@ -118,7 +118,7 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/img/sun.png');
+    background-image: url('../../assets/img/sun.png');
     background-size: contain;
     width: 660px;
     height: 660px;

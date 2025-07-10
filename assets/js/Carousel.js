@@ -1,4 +1,4 @@
-export default class Carousel {
+class Carousel {
 	constructor(container, options = {}) {
 		this.container = document.querySelector(container);
 		if (!this.container) throw new Error('Container not found');
